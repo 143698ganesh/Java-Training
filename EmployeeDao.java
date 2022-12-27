@@ -1,16 +1,19 @@
-package EmpPf;
+package EmpSalary;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class EmployeeDao {
-	public List<EmployeeModel> getModels(){
 		
-	List<EmployeeModel> emp=new ArrayList<>();
-	emp.add(new EmployeeModel(100,"gan","kochi",20000));
-	emp.add(new EmployeeModel(100,"anee","tvm",20000));
-	emp.add(new EmployeeModel(100,"sanee","che",20000));
-	return emp;
+		List<EmployeeModel> getEmployeesList (){
+			List<EmployeeModel> p = new ArrayList<>();
+			p.add(new EmployeeModel(1, "Arun", 10000));
+			p.add(new EmployeeModel(2, "Anu", 10000));
+			p.add(new EmployeeModel(3, "Hari", 90000));
+			
+			return p;
+			
+		}
 	
 	}
-}
+
